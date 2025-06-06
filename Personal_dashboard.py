@@ -164,7 +164,8 @@ def register_user(name, email, password):
         "email": email,
         "password_hash": hashed_password
     }
-    users = users.append(new_user, ignore_index=True)
+    # Use pd.concat instead of append
+    users = pd.concat([users, pd.DataFrame([new_user])], ignore_index=True)
     save_users(users)
     return "User registered successfully!"
 
@@ -201,7 +202,8 @@ def add_transaction(user_id, category, amount, transaction_type, transaction_dat
         "type": transaction_type,
         "transaction_date": transaction_date.strftime("%Y-%m-%d")
     }
-    transactions = transactions.append(new_transaction, ignore_index=True)
+    # Use pd.concat instead of append
+    transactions = pd.concat([transactions, pd.DataFrame([new_transaction])], ignore_index=True)
     save_transactions(transactions)
 
 def delete_transaction(transaction_id):
@@ -249,7 +251,7 @@ def send_email_alert(email, message):
         return f"Failed to send email: {str(e)}"
 
 # ==============================
-# Streamlit UI Code (no changes needed)
+# Streamlit UI Code
 # ==============================
 st.sidebar.title("📌 Navigation")
 
