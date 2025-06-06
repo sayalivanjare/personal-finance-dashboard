@@ -158,14 +158,13 @@ def register_user(name, email, password):
         return "User already exists!"
     hashed_password = hash_password(password)
     new_id = users['user_id'].max() + 1 if not users.empty else 1
-    new_user = {
+    new_user = pd.DataFrame([{
         "user_id": new_id,
         "name": name,
         "email": email,
         "password_hash": hashed_password
-    }
-    # Use pd.concat instead of append
-    users = pd.concat([users, pd.DataFrame([new_user])], ignore_index=True)
+    }])
+    users = pd.concat([users, new_user], ignore_index=True)
     save_users(users)
     return "User registered successfully!"
 
@@ -194,16 +193,15 @@ def fetch_transactions(user_id):
 def add_transaction(user_id, category, amount, transaction_type, transaction_date):
     transactions = load_transactions()
     new_id = transactions['transaction_id'].max() + 1 if not transactions.empty else 1
-    new_transaction = {
+    new_transaction = pd.DataFrame([{
         "transaction_id": new_id,
         "user_id": user_id,
         "category": category,
         "amount": amount,
         "type": transaction_type,
         "transaction_date": transaction_date.strftime("%Y-%m-%d")
-    }
-    # Use pd.concat instead of append
-    transactions = pd.concat([transactions, pd.DataFrame([new_transaction])], ignore_index=True)
+    }])
+    transactions = pd.concat([transactions, new_transaction], ignore_index=True)
     save_transactions(transactions)
 
 def delete_transaction(transaction_id):
