@@ -1,6 +1,6 @@
 streamlit
+bcrypt
 pandas
 numpy
-plotly
 scikit-learn
-bcrypt
+plotly
