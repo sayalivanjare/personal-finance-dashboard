@@ -150,7 +150,7 @@ def hash_password(password):
     return hashed.decode()
 
 # ==============================
-# User management functions
+# User management functions (corrected)
 # ==============================
 def register_user(name, email, password):
     users = load_users()
@@ -343,6 +343,7 @@ else:
             if predicted_expense > total_expense * 1.2:
                 st.warning("⚠️ You are likely to exceed your budget next month!")
                 if st.button("📧 Send Budget Alert Email"):
+                    # You can replace the email below with the logged-in user's email if you store it in session state
                     result = send_email_alert("user_email@example.com", "You are likely to exceed your budget!")
                     st.info(result)
 
