@@ -38,7 +38,8 @@ All without needing a backend database—just a CSV file and some Python magic!
 
 | Dashboard View | Transaction Form |
 |----------------|------------------|
-| ![Dashboard Screenshot](screenshots/dashboard.png) | ![Transaction Form](screenshots/form.png) |
+|![DashBoard](https://github.com/user-attachments/assets/104f47ee-1e0d-4b75-be7e-2126e1b9b8b0)
+ | |
 
 ---
 
