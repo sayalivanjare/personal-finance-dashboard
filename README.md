@@ -3,7 +3,7 @@
 A clean, modern, and interactive web app to manage your **income, expenses, and financial goals** — all powered by Python, Streamlit, and machine learning. Ideal for users who want **simple CSV-based financial tracking** without the need for a database.
 
 🔗 **[🌐 Live Demo](https://personal-finance-dashboard-gtimex2cf9wmq7dadqdxdc.streamlit.app/)**  
-🎦 **[📹 Watch Demo Video](https://github.com/user-attachments/assets/5d8ff6d4-cc0b-44d3-b201-0b039ee44730)**
+🎦 **https://github.com/user-attachments/assets/5d8ff6d4-cc0b-44d3-b201-0b039ee44730**
 
 ---
 
@@ -39,8 +39,6 @@ All without needing a backend database—just a CSV file and some Python magic!
 | Dashboard View | Transaction Form |
 |----------------|------------------|
 | ![Dashboard Screenshot](screenshots/dashboard.png) | ![Transaction Form](screenshots/form.png) |
-
-> Add your own screenshots in the `screenshots/` folder.
 
 ---
 
@@ -89,7 +87,7 @@ streamlit run app.py
 
 ---
 
-## 💡 Project Structure (Simplified)
+## 💡 Project Structure 
 
 ```
 personal-finance-dashboard/
