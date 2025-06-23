@@ -1,9 +1,10 @@
+
 # 💼 Personal Finance Dashboard
 
 A clean, modern, and interactive web app to manage your **income, expenses, and financial goals** — all powered by Python, Streamlit, and machine learning. Ideal for users who want **simple CSV-based financial tracking** without the need for a database.
 
 🔗 **[🌐 Live Demo](https://personal-finance-dashboard-gtimex2cf9wmq7dadqdxdc.streamlit.app/)**  
-🎦 **[🎦Video Demo ](https://github.com/user-attachments/assets/5d8ff6d4-cc0b-44d3-b201-0b039ee44730)**
+🎦 **[🎦 Video Demo](https://github.com/user-attachments/assets/5d8ff6d4-cc0b-44d3-b201-0b039ee44730)**
 
 ---
 
@@ -12,10 +13,10 @@ A clean, modern, and interactive web app to manage your **income, expenses, and 
 Managing money shouldn't be complicated.  
 **Personal Finance Dashboard** provides a lightweight yet powerful solution for:
 
-- Tracking income and spending
-- Visualizing where your money goes
-- Predicting future expenses
-- Making smarter financial decisions
+- Tracking income and spending  
+- Visualizing where your money goes  
+- Predicting future expenses  
+- Making smarter financial decisions  
 
 All without needing a backend database—just a CSV file and some Python magic!
 
@@ -25,30 +26,34 @@ All without needing a backend database—just a CSV file and some Python magic!
 
 ✨ **Why you'll love it**:
 
-- 🔐 **Secure Login System** – Uses bcrypt to hash user passwords.
-- 📝 **Intuitive Transaction Input** – Quickly add income or expense entries.
-- 📁 **CSV-Based Storage** – No database headaches. Just simple files.
-- 📊 **Dynamic Dashboard** – Filter by category, type, or time range.
-- 📈 **AI-Powered Predictions** – Estimate future expenses using linear regression.
-- 📉 **Smart Spending Insights** – Identify patterns and reduce waste.
+- 🔐 **Secure Login System** – Uses bcrypt to hash user passwords.  
+- 📝 **Intuitive Transaction Input** – Quickly add income or expense entries.  
+- 📁 **CSV-Based Storage** – No database headaches. Just simple files.  
+- 📊 **Dynamic Dashboard** – Filter by category, type, or time range.  
+- 📈 **AI-Powered Predictions** – Estimate future expenses using linear regression.  
+- 📉 **Smart Spending Insights** – Identify patterns and reduce waste.  
 
 ---
 
 ## 🖼️ Screenshots
 
-| Dashboard View | Transaction Form |
-|----------------|------------------|
-|![DashBoard](https://github.com/user-attachments/assets/5c4e6b50-a957-498b-9daf-e9a5b269eac4) ||![Transaction](https://github.com/user-attachments/assets/bc5eb657-6a86-4ceb-8097-17469192b28b) |
+### 📊 Dashboard View
+![Dashboard Screenshot](https://github.com/user-attachments/assets/5c4e6b50-a957-498b-9daf-e9a5b269eac4)
+
+---
+
+### 🧾 Transaction Entry Form
+![Transaction Form Screenshot](https://github.com/user-attachments/assets/bc5eb657-6a86-4ceb-8097-17469192b28b)
 
 ---
 
 ## 🧠 Tech Stack
 
-- 🐍 **Python 3**
-- 🎨 **Streamlit** – Beautiful & reactive frontend
-- 📊 **Pandas** – Data handling and manipulation
-- 🔐 **bcrypt** – Password security
-- 🧠 **scikit-learn** – For machine learning predictions
+- 🐍 **Python 3**  
+- 🎨 **Streamlit** – Beautiful & reactive frontend  
+- 📊 **Pandas** – Data handling and manipulation  
+- 🔐 **bcrypt** – Password security  
+- 🧠 **scikit-learn** – For machine learning predictions  
 
 ---
 
@@ -61,7 +66,7 @@ To run this project locally, follow these steps:
 ```bash
 git clone https://github.com/yourusername/personal-finance-dashboard.git
 cd personal-finance-dashboard
-```
+````
 
 ### 2. Setup Virtual Environment
 
@@ -87,7 +92,7 @@ streamlit run app.py
 
 ---
 
-## 💡 Project Structure 
+## 💡 Project Structure
 
 ```
 personal-finance-dashboard/
@@ -118,20 +123,19 @@ Date,Type,Category,Amount,Description
 
 ## 🤝 Contributing
 
-Got ideas? Spotted a bug?  
+Got ideas? Spotted a bug?
 We’d love your help! Feel free to:
 
-- 🌟 Star the repo
-- 🐛 Open issues
-- 📥 Submit pull requests
+* 🌟 Star the repo
+* 🐛 Open issues
+* 📥 Submit pull requests
 
 ---
 
 ## 📄 License
 
-Licensed under the **Apache License 2.0**.  
+Licensed under the **Apache License 2.0**.
 See the [LICENSE](LICENSE) file for full details.
 
----
-
+```
 
